@@ -1,0 +1,314 @@
+﻿<html>
+	<head><title>BALLENA JOROBADA</title></head>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+	body{background-color:#E6F2FF;
+	margin:0}
+
+	.e0{color:#1F4E79;
+	font-family:'Playfair Display', serif;
+	font-size:48pt;
+	text-align:center;
+	padding-top: 45px}
+
+	.e1{color:#1F3A5F;
+	font-family:'Lato', sans-serif;
+	font-size:20px;
+	text-align:justify}
+
+	.e2{color:#3D7CBF;
+	font-family:'Playfair Display', serif;
+	font-size:36px;
+	text-align:center}
+
+	img{display:block;
+	margin:auto;
+	width:60%;
+	border-radius:10px}
+
+	.linea{width:85%;
+	height:4px;
+	background-color:#3D7CBF;
+	margin:20px auto}
+
+	.menu{background:#1F4E79;
+	display:flex;
+	justify-content:center;
+	list-style:none;
+	padding:0;
+	margin:0;
+	font-family:'Lato', sans-serif;
+
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:1000}
+
+	.menu li{position:relative}
+
+	.menu li a{display:block;
+	padding:8px 15px;
+	color:white;
+	text-decoration:none;
+	font-size:18px}
+
+	.menu li a:hover{background:#3D7CBF}
+
+	.menu li ul{display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#E6F2FF;
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:180px;
+	box-shadow:0 4px 8px rgba(0,0,0,0.15)}
+
+	.menu li ul li a{
+	color:#1F3A5F;
+	padding:12px}
+
+	.menu li ul li a:hover{background:#CFE4F7}
+
+	.menu li:hover ul{display:block}
+
+
+
+.slides{padding:0;
+	width:350px;
+	height:350px;
+	display:block;
+	margin:0 auto;
+	position:relative}
+
+.slides *{user-select:none}
+
+.slides input{display:none}
+
+.slide-container{display:block}
+
+.slide{top:0;
+	opacity:0;
+	width:350px;
+	height:350px;
+	display:block;
+	position:absolute;
+	transform:scale(0);
+	transition:all .7s ease-in-out}
+
+.slide img{width:100%;
+	height:100%}
+
+.nav label{width:200px;
+	height:100%;
+	display:none;
+	position:absolute;
+	opacity:0;
+	z-index:9;
+	cursor:pointer;
+	transition:opacity .2s;
+	color:#FFF;
+	font-size:156pt;
+	text-align:center;
+	line-height:380px;
+	background-color:rgba(255,255,255,.3)}
+
+.slide:hover + .nav label{opacity:0.5}
+
+.nav label:hover{opacity:1}
+
+.nav .next{right:0}
+
+input:checked + .slide-container .slide{opacity:1;
+				transform:scale(1);
+				transition:opacity 1s ease-in-out}
+
+input:checked + .slide-container .nav label{display:block}
+
+.nav-dots{width:100%;
+	bottom:9px;
+	height:11px;
+	display:block;
+	position:absolute;
+	text-align:center}
+
+.nav-dots .nav-dot{top:-5px;
+		width:11px;
+		height:11px;
+		margin:0 4px;
+		position:relative;
+		border-radius:100%;
+		display:inline-block;
+		background-color:rgba(0,0,0,0.6)}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6{background:rgba(0,0,0,0.8)}
+
+</style>
+
+<body>
+
+<ul class="menu">
+		<li><a href="#"> Inicio</a>
+	<ul><li><a href="index.html"> Pag de inicio </li></ul>
+		<li><a href="#">Peces</a>
+	<ul>
+		<li><a href="https://www.wwf.es/nuestro_trabajo/especies_y_habitats/tiburones_/">Tiburón</a></li>
+		<li><a href="https://www.pescaderiascorunesas.es/pescados/salmon">Salmón</a></li>
+		<li><a href="https://www.nationalgeographic.com/animals/fish/facts/manta-ray">Mantarraya</a></li>
+		<li><a href="https://www.nationalgeographic.com/animals/fish/facts/clownfish">Pez payaso</a></li>
+		<li><a href="https://www.nationalgeographicla.com/animales/caballitos-de-mar-dieta-habitat-conservacion-y-curiosidades">Caballito de mar</a></li>
+	</ul></li>
+
+		<li><a href="#">Mamíferos</a>
+	<ul>
+		<li><a href="ballenas.html">Ballena Jorobada </a></li>
+		<li><a href="gatos.html">Gato</a></li>
+		<li><a href="orcas.html">Orca</a></li>
+		<li><a href="venados.html">Venado</a></li>
+		<li><a href="armiños.html">Armiño</a></li>
+	</ul></li>
+
+		<li><a href="#">Anfibios</a>
+	<ul>
+		<li><a href="anfibios.html">Anfibios</a></li>
+	</ul></li>
+
+		<li><a href="#">Aves</a>
+	<ul>
+		<li><a href="https://es.wikipedia.org/wiki/%C3%81guila">Águila</a></li>
+		<li><a href="https://www.nationalgeographicla.com/animales/loros">Loro</a></li>
+		<li><a href="https://www.aquariumbcn.com/animales-flora-marina/los-pinguinos/">Pingüino</a></li>
+		<li><a href="https://humanidades.com/buho/">Búho</a></li>
+		<li><a href="https://www.mexicodesconocido.com.mx/colibri-ave.html">Colibrí</a></li>
+	</ul></li>
+
+		<li><a href="#">Reptiles</a>
+	<ul>
+		<li><a href="boa.html">Serpiente (boa)</a></li>
+		<li><a href="toloc.html">Toloc</a></li>
+		<li><a href="caiman.html">Caiman</a></li>
+		<li><a href="camaleon.html">Camaleón</a></li>
+		<li><a href="tortuga.html">Tortuga</a></li>
+	</ul></li>
+	</ul>
+
+	<p class="e0">BALLENA JOROBADA</p>
+	<p class="e2"> (Megaptera novaeangliae)</p>
+		<center><img src="bj1.jfif"></center>
+
+	<div class="linea"></div>
+	<p class="e2">Hábitat</p>
+	<p class="e1">
+La ballena jorobada es un mamífero marino que habita en la mayoría de los
+océanos del mundo. Prefiere aguas frías para alimentarse y aguas cálidas
+para reproducirse, por lo que realiza largas migraciones cada año entre
+sus zonas de alimentación y reproducción.
+	</p>
+
+	<p class="e2">Estilo de vida</p>
+	<p class="e1">
+Las ballenas jorobadas son conocidas por sus impresionantes saltos fuera
+del agua y por los complejos cantos que producen para comunicarse. Suelen
+vivir solas o en pequeños grupos y se alimentan principalmente de krill y
+pequeños peces que capturan utilizando técnicas de caza en grupo.
+	</p>
+
+	<p class="e2">5 Características de la ballena jorobada</p>
+	<ol class="e1">
+		<li>Pueden medir entre 12 y 16 metros de longitud.</li>
+		<li>Tienen aletas pectorales muy largas en comparación con otras ballenas.</li>
+		<li>Realizan saltos espectaculares fuera del agua.</li>
+		<li>Producen cantos complejos para comunicarse.</li>
+		<li>Realizan largas migraciones cada año.</li>
+	</ol>
+
+	<ul class="slides">
+<input type="radio" name="radio-btn" id="img-1" checked />
+		<li class="slide-container">
+	<div class="slide">
+	<img src="bj2.jpg">
+	</div>
+
+	<div class="nav">
+		<label for="img-6" class="prev">&#x2039;</label>
+		<label for="img-2" class="next">&#x203a;</label>
+	</div></li>
+
+<input type="radio" name="radio-btn" id="img-2" />
+		<li class="slide-container">
+	<div class="slide">
+	<img src="bj3.jpg">
+	</div>
+
+	<div class="nav">
+		<label for="img-1" class="prev">&#x2039;</label>
+		<label for="img-3" class="next">&#x203a;</label>
+	</div></li>
+
+<input type="radio" name="radio-btn" id="img-3" />
+		<li class="slide-container">
+	<div class="slide">
+	<img src="bj4.jpg">
+	</div>
+
+	<div class="nav">
+		<label for="img-2" class="prev">&#x2039;</label>
+		<label for="img-4" class="next">&#x203a;</label>
+	</div></li>
+
+<input type="radio" name="radio-btn" id="img-4" />
+		<li class="slide-container">
+	<div class="slide">
+	<img src="bj5.jpg">
+	</div>
+
+	<div class="nav">
+		<label for="img-3" class="prev">&#x2039;</label>
+		<label for="img-5" class="next">&#x203a;</label>
+	</div></li>
+
+<input type="radio" name="radio-btn" id="img-5" />
+		<li class="slide-container">
+	<div class="slide">
+	<img src="bj6.jpg">
+	</div>
+
+	<div class="nav">
+		<label for="img-4" class="prev">&#x2039;</label>
+		<label for="img-6" class="next">&#x203a;</label>
+	</div></li>
+
+<input type="radio" name="radio-btn" id="img-6" />
+		<li class="slide-container">
+	<div class="slide">
+	<img src="bj7.jpg">
+	</div>
+
+	<div class="nav">
+		<label for="img-5" class="prev">&#x2039;</label>
+		<label for="img-1" class="next">&#x203a;</label>
+	</div></li>
+
+	<li class="nav-dots">
+		<label for="img-1" class="nav-dot" id="img-dot-1"></label>
+		<label for="img-2" class="nav-dot" id="img-dot-2"></label>
+		<label for="img-3" class="nav-dot" id="img-dot-3"></label>
+		<label for="img-4" class="nav-dot" id="img-dot-4"></label>
+		<label for="img-5" class="nav-dot" id="img-dot-5"></label>
+		<label for="img-6" class="nav-dot" id="img-dot-6"></label>
+	</li></ul>
+
+	<center>
+		<a href="index.html">Regresar a la página principal</a>
+	</center>
+	</body>
+</html>
